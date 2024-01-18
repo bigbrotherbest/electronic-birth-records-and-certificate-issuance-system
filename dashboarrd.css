@@ -1,0 +1,55 @@
+.logo {
+  margin-left: 50px;
+  color: white;
+  height: 40px;
+  background-color: rgba(30, 170, 103, 1);
+  width: 120px;
+  border-radius: 15px;
+  border: none;
+  font-family: "Urbanist", sans-serif;
+  padding: 10px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+
+.headerbutton {
+  margin-top: 0px;
+  margin-right: 50px;
+  height: 60px;
+  width: 120px;
+  border: none;
+  border-radius: 15px;
+  background-color: rgb(238, 42, 42);
+  font-family: "Urbanist", sans-serif;
+  font-size: 18px;
+  color: white;
+}
+
+.hearder {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.bodycontent {
+  padding: 50px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  justify-content: space-around;
+}
+
+button {
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 10px;
+  margin-top: 50px;
+  color: white;
+  height: 60px;
+  width: 200px;
+  background-color: rgb(44, 226, 44);
+  border: none;
+}

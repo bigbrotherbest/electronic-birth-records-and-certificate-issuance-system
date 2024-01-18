@@ -1,0 +1,202 @@
+:root {
+  --primary-color: rgb(69, 209, 34);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Montserrat, "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  display: grid;
+  place-items: center;
+  min-height: 90vh;
+}
+/* Global Stylings */
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+.readonly {
+  cursor: not-allowed;
+}
+
+input {
+  background-color: rgb(233, 233, 243);
+  font-family: Montserrat, "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 12px;
+  display: block;
+  width: 180px;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 0.85rem;
+}
+
+.width-50 {
+  width: 50%;
+}
+
+.ml-auto {
+  margin-left: auto;
+}
+
+.text-center {
+  text-align: center;
+  font-size: 18px;
+}
+
+/* Progressbar */
+.progressbar {
+  flex-direction: row;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  counter-reset: step;
+  margin: 2rem 0 5rem;
+}
+
+.progressbar::before,
+.progress {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 4px;
+  width: 100%;
+  background-color: #dcdcdc;
+  z-index: -1;
+}
+
+.progress {
+  background-color: var(--primary-color);
+  width: 0%;
+  transition: 0.3s;
+}
+
+.progress-step {
+  width: 2.1875rem;
+  height: 2.1875rem;
+  background-color: #dcdcdc;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.progress-step::before {
+  counter-increment: step;
+  content: counter(step);
+}
+
+.progress-step::after {
+  text-align: center;
+  content: attr(data-title);
+  position: absolute;
+  top: calc(100% + 0.5rem);
+  font-size: 0.85rem;
+  color: #666;
+}
+
+.progress-step-active {
+  background-color: var(--primary-color);
+  color: #f3f3f3;
+}
+
+/* Form */
+.form {
+  height: 680px;
+  width: 900px;
+  /* width: clamp(320px, 30%, 430px); */
+  margin: 0 auto;
+  border: 1px solid #ccc;
+  border-radius: 1.35rem;
+  padding: 1.5rem;
+}
+
+.Fullcontent {
+  margin-bottom: 2px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 54px;
+  font-weight: bold;
+  color: rgb(116, 117, 117);
+}
+.ruler {
+  margin-top: 5px;
+  height: 3px;
+  width: 50px;
+  background-color: rgb(115, 214, 90);
+}
+.pack {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.top {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+}
+
+.coatofarms {
+  height: 50px;
+  margin-right: 30px;
+}
+
+.form-step {
+  display: none;
+  transform-origin: top;
+  animation: animate 0.5s;
+}
+
+.form-step-active {
+  display: block;
+}
+
+.input-group {
+  margin: 2rem 0;
+}
+
+@keyframes animate {
+  from {
+    transform: scale(1, 0);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1, 1);
+    opacity: 1;
+  }
+}
+
+/* Button */
+.btns-group {
+  margin: 4;
+  display: flex;
+  flex-direction: row;
+}
+
+.btn {
+  /* height: 40px; */
+  margin-top: 10px;
+  margin-left: 54px;
+
+  width: 140px;
+  padding: 0.75rem;
+  display: block;
+  text-decoration: none;
+  background-color: var(--primary-color);
+  color: #f3f3f3;
+  text-align: center;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  box-shadow: 0 0 0 2px #fff, 0 0 0 3px var(--primary-color);
+}

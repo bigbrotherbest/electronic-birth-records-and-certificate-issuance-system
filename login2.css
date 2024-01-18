@@ -1,0 +1,296 @@
+body {
+  background-color: rgba(229, 231, 229, 1);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logologin {
+  border: 1px solid black;
+  color: white;
+  height: 40px;
+  background-color: rgba(30, 170, 103, 1);
+  width: 120px;
+  border-radius: 15px;
+  font-family: "Urbanist", sans-serif;
+  padding: 10px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  font-family: "Urbanist", sans-serif;
+}
+
+.pagecontent {
+  margin: 0;
+  align-items: center;
+  justify-content: center;
+  height: 650px;
+  display: flex;
+  flex-direction: column;
+}
+
+.whitebox {
+  margin-top: 40px;
+  height: 420px;
+  width: 540px;
+  background-color: aliceblue;
+  border-radius: 15px;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.whitebox-text {
+  margin-top: 8px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  font-size: 18px;
+}
+
+.whitebox-text1 {
+  font-family: "Urbanist", sans-serif;
+  margin-bottom: 0px;
+}
+
+.whitebox-text2 {
+  font-weight: 100;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+/* .forgotpassword {
+      display: flex;
+      flex-direction: row;
+      font-family: "Urbanist", sans-serif;
+      justify-content: center;
+      align-items: center;
+    } */
+
+.firsttext {
+  margin-right: 5px;
+  font-size: 18px;
+}
+
+.secondtext {
+  color: rgba(30, 170, 103, 1);
+  font-size: 18px;
+}
+
+.resetpassword {
+  color: green;
+}
+
+.inputing {
+  height: 260px;
+  justify-content: center;
+  justify-content: space-around;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.inputing-1 {
+  outline-color: rgb(82, 255, 82);
+  font-family: "Montserrat", sans-serif;
+  border-radius: 8px;
+  font-size: 18px;
+  padding-left: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-bottom: 30px;
+  height: 10%;
+  width: 60%;
+  border: none;
+  background-color: rgb(215, 241, 228);
+  border: 1px solid;
+}
+
+.submit-button {
+  cursor: pointer;
+  border: 1px solid black;
+  border-radius: 10px;
+  height: 16%;
+  width: 64%;
+  margin: 0px;
+  background-color: rgba(0, 186, 0, 1);
+  font-size: 18px;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.inputing-2 {
+  outline-color: rgb(82, 255, 82);
+  font-family: "Montserrat", sans-serif;
+  border-radius: 8px;
+  font-size: 18px;
+  padding-left: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin: 0px;
+  height: 10%;
+  width: 60%;
+  margin-bottom: 50px;
+  border: none;
+  background-color: rgb(215, 241, 228);
+  margin-bottom: 40px;
+  border: 1px solid;
+}
+
+/* .input-box {
+        position: relative;
+      } */
+
+.inputing h1 {
+  margin-right: 240px;
+  margin-bottom: 5px;
+  font-size: 16px;
+  font-family: "Urbanist", sans-serif;
+}
+
+.inputing h2 {
+  margin-right: 315px;
+  margin-top: 0px;
+  margin-bottom: 5px;
+  font-size: 16px;
+  font-family: "Urbanist", sans-serif;
+}
+
+@media (max-width: 700px) {
+  body {
+    background-color: rgba(229, 231, 229, 1);
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .logologin {
+    border: 1px solid black;
+    height: 30px;
+    background-color: rgba(30, 170, 103, 1);
+    width: 100px;
+    border-radius: 15px;
+    font-family: "Urbanist", sans-serif;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    font-size: 10px;
+    font-weight: bold;
+  }
+
+  .whitebox {
+    width: 300px;
+    height: 320px;
+  }
+
+  .whitebox-text {
+    margin-top: 10px;
+  }
+
+  .whitebox-text1 {
+    font-size: 20px;
+  }
+  .whitebox-text2 {
+    font-size: 10px;
+  }
+
+  .forgotpassword {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .firsttext {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 10px;
+  }
+
+  .secondtext {
+    margin-top: 5px;
+    font-size: 10px;
+  }
+
+  .inputing {
+    height: 238px;
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: column;
+    margin-top: 12px;
+  }
+
+  .inputing-1 {
+    font-size: 10px;
+    height: 20px;
+    /* margin-bottom: 18px; */
+  }
+
+  .inputing-2 {
+    margin-top: 0px;
+    font-size: 10px;
+    height: 20px;
+  }
+
+  .submit-button {
+    height: 40px;
+    border-radius: 8px;
+    font-size: 14px;
+    width: 69%;
+  }
+
+  .inputing h1 {
+    margin-right: 124px;
+    margin-bottom: 4px;
+    font-size: 12px;
+    font-family: "Urbanist", sans-serif;
+  }
+
+  .inputing h2 {
+    margin-top: 0px;
+    margin-right: 150px;
+    margin-bottom: 4px;
+    font-size: 12px;
+    font-family: "Urbanist", sans-serif;
+  }
+}
+
+.message {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 9999;
+}
+
+.message h1 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.message p {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.message button {
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+}
